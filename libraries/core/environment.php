@@ -38,6 +38,7 @@ if (!empty($arrayUrl[2])){
         $params .= $arrayUrl[$i].".";
     }
     $params = trim($params, ",");
+    $params = substr($params, 0, -1);//eliminamos el ultimo caracter el string
 }
 
 var_dump("controlador: ".$controller); echo '<br>';
