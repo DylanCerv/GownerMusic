@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: #f3f2ef;
 }
 
 body{
@@ -60,25 +61,28 @@ main{
     border-radius: 10px;
     padding: 10px;
     margin: 0 0 1.5% 0;
-}
-
-.contenedor-perfil-resumen{
-    border: solid 1px #bfbfc0;
-    border-radius: 10px;
-    padding: 0;
-    margin: 0 0 2% 0;
-}
-
-.contenedor-cosas-recientes{
-    border: solid 1px #bfbfc0;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: #ffffff;
 }
 
 .publicacion{
     border: solid 1px #bfbfc0;
     border-radius: 10px;
     padding: 10px;
+    background-color: #ffffff;
+}
+
+.contenedor-perfil-resumen{
+    border: solid 1px #bfbfc0;
+    border-radius: 10px;
+    margin: 0 0 3% 0;
+    background-color: #ffffff;
+}
+
+.contenedor-cosas-recientes{
+    border: solid 1px #bfbfc0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff;
 }
 
 .publicidad{
@@ -90,10 +94,12 @@ main{
 
 .barra-crear-publicacion{
     display: flex;
+    background-color: #ffffff;
     padding: 0 0 10px 0;
 }
 
 .barra-crear-publicacion button.crear-publicacion{
+    background-color: #ffffff;
     margin: auto;
     padding: 3%;
     background-color: transparent;
@@ -106,93 +112,122 @@ main{
 }
 
 .barra-crear-publicacion img{
+    background-color: #ffffff;
     border-radius: 100px;
     margin: auto;
     width: 10%;
 }
 
+.contenedor-centro hr{
+    margin: 2% 0;
+}
+
 /****************** PERFIL-RESUMEN ********************/
 
-.contenedor-perfil-resumen{
-    float: left;
-}
-
-.cabecera-perfil img{
-    width: 100%;
-    border-radius: 9px 9px 0 0;
-}
 
 .perfil-posicion-absoluta{
     position: relative;
 }
 
+.cabecera-perfil img{
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+    background-color: #ffffff;
+    position: absolute;
+    /* z-index: 1; */
+}
+/*
 .perfil-posicion-absoluta .cabecera-perfil img.portada{
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+    background-color: #ffffff;
     position: absolute;
     z-index: 1;
-    background-color: antiquewhite;
-}
+} */
 
 .perfil-posicion-absoluta .cabecera-perfil a img.perfil{
-    position: absolute;
-    z-index: 2;
+    position: relative;
+    /* z-index: 2; */
     border-radius: 100%;
-}
-/* .perfil-posicion-absoluta .foto-perfil a > img.portada{
-    position: absolute;
-
-} */
-/* .perfil-posicion-absoluta .foto-perfil a > img.perfil{
-    z-index: 2;
-    border-radius: 100%;
-} */
-
-.perfil-posicion-absoluta .foto-perfil{
-    text-align: center;
-
+    padding: 5% 30%;
+    background-color: transparent;
 }
 
-/* .cabecera-perfi{
-    z-index: 1;
+.perfil-posicion-absoluta .cabecera-perfil a h4{
+    margin: 0 15% 5% 15%;
+    background-color: #ffffff;
+    font-size: 1rem;
 }
 
-.foto-perfil{
-    z-index: 2;
-} */
+/*//////////////////////////////////*/
 
-.perfil .cabecera-perfil img{
-    /* background-position: center; */
-    /* background-size: cover; */
-    /* height: 56px; */
-    /* height: 3.5rem;
-    border-radius: 8PX 8PX 0 0; */
-
+.contenedor-lado-izquierdo .contenedor-perfil-resumen .descripcion{
+    margin: 5%;
 }
 
-.perfil .foto-perfil a{
-    /* content: inherit;
-    margin: 7% 27%;
-    text-align: center; */
+.contenedor-lado-izquierdo .contenedor-perfil-resumen .descripcion p{
+    font-size: 0.95em;
 }
 
-.perfil .foto-perfil a > img{
-    /* border: solid #F9F8FC 2px;
-    border-radius: 100px; */
-    /* margin: 1px; */
-    /* padding: 0; */
-    /* width: 70%; */
+.contenedor-lado-izquierdo .contenedor-perfil-resumen a.contenedor-favoritos{
+    padding: .5%;
 }
 
+.contenedor-lado-izquierdo .contenedor-perfil-resumen a.contenedor-favoritos .favoritos img{
+    float: left;
+    margin: 0 5%;
+    width: 8%;
+}
 
+.contenedor-lado-izquierdo .contenedor-perfil-resumen a.contenedor-favoritos h5{
+    font-size: 0.8em;
+    padding: 0 0 0 15%;
+}
+
+/*//////////////////////////////////*/
+
+.contenedor-lado-izquierdo .contenedor-perfil-resumen a.contenedor-publicaciones-guardadas{
+    padding: .5%;
+}
+
+.contenedor-lado-izquierdo .contenedor-perfil-resumen a.contenedor-publicaciones-guardadas .publicaciones-guardadas img{
+    float: left;
+    margin: 0 5%;
+    width: 8%;
+}
+
+.contenedor-lado-izquierdo .contenedor-perfil-resumen a.contenedor-publicaciones-guardadas h5{
+    font-size: 0.8em;
+    padding: 0 0 0 15%;
+}
 
 
 /******************** COSAS RECIENTES ******************/
 
+.contenedor-lado-izquierdo .contenedor-cosas-recientes hr{
+    margin: 5% -5%;
+}
 
+.contenedor-lado-izquierdo .contenedor-cosas-recientes .listas .titulos{
+    margin: 0 0 2% 0;
+}
 
+.contenedor-lado-izquierdo .contenedor-cosas-recientes ul  li a img{
+    float: left;
+    width: 8%;
+}
+
+.contenedor-lado-izquierdo .contenedor-cosas-recientes ul  li a h5{
+    font-size: 0.8em;
+    margin: 0 0 0.5% 0;
+}
 
 /******************** PUBLICACION ******************/
 
 
 
-
 /******************** PUBLICIDAD ******************/
+
+* hr{
+    color: rgb(230, 0, 0)
+}

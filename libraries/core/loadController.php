@@ -7,7 +7,7 @@ $controllerFile = "controllers/$controller.php";
 if (file_exists($controllerFile)){
     require_once $controllerFile;
     $controller = new $controller();
-    // echo "el controlador si existe";
+
     if (method_exists($controller, $method)){
         $controller->{$method}($params);
     }else{

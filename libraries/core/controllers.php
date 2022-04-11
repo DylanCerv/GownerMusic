@@ -3,12 +3,8 @@
 
 class Controllers{
 
-    public $instanciaModel;
-
-
-
-
     public function __construct(){
+        $this->view = new Views();
         $this->loadModel();
     }
 

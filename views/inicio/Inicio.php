@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GownerMusic</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -33,18 +33,16 @@
                     <div class="perfil-posicion-absoluta"><!-- style="position: relative;"-->
                         <div class="cabecera-perfil"> <!--style="position: absolute;"-->
                             <img class="portada" src="https://media-exp1.licdn.com/dms/image/C4D16AQGKgCxFE9D5Xg/profile-displaybackgroundimage-shrink_200_800/0/1644900203321?e=1654732800&v=beta&t=plNZlVVT8oIjV8IEXffbO-3MQcvlEO1LEE_vb2p5UZY" alt="foto de la portada" class="foto-portada">
-                            <a href="#">
-                                <img class="perfil" src="https://media-exp1.licdn.com/dms/image/D4D35AQFMtsEvO0oMNQ/profile-framedphoto-shrink_100_100/0/1649201824711?e=1649523600&v=beta&t=e8CRpdlQ4TweUhF43CQyDcyImjyiJ2Zh_Gx6VXKtsYk" alt="foto del perfil">
-                                <h4>Nombre dasdad dsad</h4>
+                            <a style="text-align: center;" href="#">
+                                <img class="perfil" src = "img/perfilMio.jpg" alt="foto del perfil">
+                                <h4>Nombre del usuario</h4>
                             </a>
-                        </div>
-                        <div class="foto-perfil"><!--style="position: absolute;"-->
                         </div>
                     </div>
                 </div>
                 <hr class="linea-contenendor-perfil-resumen">
                 <div class="descripcion">
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aperiam.</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aperiam.</p>
                 </div>
                 <hr class="linea-contenendor-favoritos">
                 <a href="#" class="contenedor-favoritos">
@@ -62,29 +60,83 @@
                 </a>
             </div>
             <div class="contenedor-cosas-recientes">
-                <div class="recientes">
-                    <h4>Reciente</h4>
-                    <a href="#">Cosas Recientes</a>
-                    <a href="#">Cosas Recientes</a>
-                    <a href="#">Cosas Recientes</a>
-                    <a href="#">Cosas Recientes</a>
-                    <a href="#">Cosas Recientes</a>
+                <div class="listas">
+                    <h5 class="titulos">Reciente</h5>
+                    <ul>
+                        <li>
+                            <a href="#" class="lista-cosas">
+                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <h5>Cosas Recientes</h5>
+                            </a>
+                        </li>    
+                        <li>
+                            <a href="#" class="lista-cosas">
+                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <h5>Cosas Recientes</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lista-cosas">
+                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <h5>Cosas Recientes</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lista-cosas">
+                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <h5>Cosas Recientes</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lista-cosas">
+                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <h5>Cosas Recientes</h5>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <hr class="linea-contenendor-grupos">
-                <div class="grupos">
-                    <h4>Grupos</h4>
-                    <a href="#">Grupos</a>
-                    <a href="#">Grupos</a>
-                    <a href="#">Grupos</a>
-                    <a href="#">Grupos</a>
-                    <a href="#">Grupos</a>
+                <div class="listas">
+                    <h5 class="titulos">Grupos</h5>
+                    <ul>
+                        <li>
+                            <a href="#" class="lista-grupos">
+                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <h5>Grupos</h5>
+                            </a>
+                        </li>    
+                        <li>
+                            <a href="#" class="lista-grupos">
+                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <h5>Grupos</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lista-grupos">
+                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <h5>Grupos</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lista-grupos">
+                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <h5>Grupos</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lista-grupos">
+                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <h5>Grupos</h5>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="contenedor-centro">
             <div class="nuevo-post">
                 <div class="barra-crear-publicacion">
-                    <img src="https://media-exp1.licdn.com/dms/image/D4D35AQFMtsEvO0oMNQ/profile-framedphoto-shrink_100_100/0/1649201824711?e=1649523600&v=beta&t=e8CRpdlQ4TweUhF43CQyDcyImjyiJ2Zh_Gx6VXKtsYk" alt="foto de perfil">
+                    <img src="img/perfilMio.jpg" alt="foto de perfil">
                     <button class="crear-publicacion">Crear publicacion</button>
                 </div>
                 <div class="botones">
@@ -106,10 +158,11 @@
                     </button>
                 </div>
             </div>
+            <hr>
             <div class="publicacion">
                 <div class="publicacion-perfil">
                     <a href="#">
-                        <img src="https://media-exp1.licdn.com/dms/image/D4D35AQFMtsEvO0oMNQ/profile-framedphoto-shrink_100_100/0/1649201824711?e=1649523600&v=beta&t=e8CRpdlQ4TweUhF43CQyDcyImjyiJ2Zh_Gx6VXKtsYk" alt="foto de perfil">
+                        <img src="img/perfilMio.jpg" alt="foto de perfil">
                         <h4>Nombre del autor</h4>
                     </a>
                     <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit inventore consectetur qui sint vitae odio. Nesciunt unde porro nihil, veritatis eveniet et voluptatibus quasi, molestiae qui debitis hic, illo ad.</h5>

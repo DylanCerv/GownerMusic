@@ -7,9 +7,9 @@ class Inicio extends Controllers{
         parent::__construct();
     }
 
-
-    public function inicio(){
-        echo "mensaje desde el controlador inicio, clase inicio, y metodo inicio";
+    public function inicio($params){
+        // echo "mensaje desde el controlador inicio, clase inicio, y metodo inicio";
+        $this->view->getViews($this, 'inicio');
     }
 
     public function dolares($params){
