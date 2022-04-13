@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="header-inicio">
         <div class="contenedor-menu">
             <div class="buscador">
                 <img src="#" alt="lupa del buscador">
@@ -26,7 +26,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="main-inicio">
         <div class="contenedor-lado-izquierdo">
             <div class="contenedor-perfil-resumen">
                 <div class="perfil">
@@ -140,22 +140,24 @@
                     <button class="crear-publicacion">Crear publicacion</button>
                 </div>
                 <div class="botones">
-                    <button class="publicar-foto">
-                        <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de video">
-                        Foto
-                    </button>
-                    <button class="publicar-video">
-                        <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de video">
-                        Videos
-                    </button>
-                    <button class="publicar-historia">
-                        <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de video">
-                        Hitoria
-                    </button>
-                    <button class="publicar-articulo">
-                        <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de video">
-                        Escribir articulo
-                    </button>
+                    <ul>
+                        <button class="publicar-foto">
+                            <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de video">
+                            Foto
+                        </button>
+                        <button class="publicar-video">
+                            <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de video">
+                            Videos
+                        </button>
+                        <button class="publicar-historia">
+                            <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de video">
+                            Hitoria
+                        </button>
+                        <button class="publicar-articulo">
+                            <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de video">
+                            Escribir articulo
+                        </button>
+                    </ul>
                 </div>
             </div>
             <hr>
@@ -165,8 +167,24 @@
                         <img src="img/perfilMio.jpg" alt="foto de perfil">
                         <h4>Nombre del autor</h4>
                     </a>
-                    <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit inventore consectetur qui sint vitae odio. Nesciunt unde porro nihil, veritatis eveniet et voluptatibus quasi, molestiae qui debitis hic, illo ad.</h5>
+                </div>
+                <div class="publicacion-contenido">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit inventore consectetur qui sint vitae odio. Nesciunt unde porro nihil, veritatis eveniet et voluptatibus quasi, molestiae qui debitis hic, illo ad.</p>
                     <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="publicacion-documento">
+                </div>
+                <div class="publicacion-opciones">
+                    <a href="">
+                        <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="publicacion-documento">
+                        <p>Like</p>
+                    </a>
+                    <a href="">
+                        <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="publicacion-documento">
+                        <p>Compartir</p>
+                    </a>
+                    <a href="">
+                        <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="publicacion-documento">
+                        <p>Guardar</p>
+                    </a>
                 </div>
             </div>
         </div>
