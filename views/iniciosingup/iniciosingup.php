@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GownerMusic</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="<?= media()?>/style.css">
 </head>
 <body>
     
@@ -17,17 +18,17 @@
                 <h1>Unete a GownerMusic</h1>
             </div>
             <div class="cambio">
-                <a href="" class="login">Iniciar Sesion</a>
-                <a href="" class="registro">Resgistrarse</a>
+                <a href="?account=login" class="login">Iniciar Sesion</a>
+                <!-- <a href="" class="registro">Resgistrarse</a> -->
                 <hr>
             </div>
         </div>
         <form action="" method="post">
-            <input type="text" class="usuario" name="usuario" id="usuario" placeholder="Nombre de Usuario">
-            <input type="email" class="correo" name="correo" id="correo" placeholder="Correo electronico">
-            <input type="email" class="correo" name="confirmar-correo" id="confirmar-correo" placeholder="Confirmar correo electronico">
-            <input type="password" name="confirmar-password" id="confirmar-password" placeholder="Confirmar contraseña">
-            <input type="password" name="confirmar-password" id="confirmar-password" placeholder="Confirmar contraseña">
+            <input type="text" class="usuario" name="usuario" id="usuario" placeholder="Nombre de Usuario" required>
+            <input type="email" class="correo" name="email" id="email" placeholder="Correo electronico" required>
+            <input type="email" class="correo" name="confirmar-correo" id="confirmar-correo" placeholder="Confirmar correo electronico" required>
+            <input type="password" name="confirmar-password" id="confirmar-password" placeholder="Confirmar contraseña" required>
+            <input type="password" name="confirmar-password" id="confirmar-password" placeholder="Confirmar contraseña" required>
             <hr>
             <p>GownerMusic puede usar tu número de teléfono para llamarte o enviarte mensajes de texto con información sobre tu cuenta.</p>
             <p>Al hacer clic en Registrarse, indicas que has leído y aceptas los <a href="">Términos del servicio</a> y la <a href="">Pólitica de privacidad</a>, inluyendo la politica de <a href="">Uso de Cookies</a>.</p>

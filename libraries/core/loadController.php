@@ -11,8 +11,8 @@ if (file_exists($controllerFile)){
     if (method_exists($controller, $method)){
         $controller->{$method}($params);
     }else{
-        echo "El metodo no existe";
+        require_once "controllers/errors.php";
     }
 }else{
-    echo "Lo sentimos pero el controlador no existe, cree el controlador";
+    require_once "controllers/errors.php";
 }

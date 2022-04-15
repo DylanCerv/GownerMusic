@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GownerMusic</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="<?= media()?>/style.css">
 </head>
 <body>
 
@@ -17,8 +17,8 @@
             <div class="contenedor-formulario-login">
                 <h1>GownerMusic</h1>
                 <form class="formulario-login" method="post">
-                    <input type="text" placeholder="Usuario o Email" name="usuario" id="usuario">
-                    <input type="password" placeholder="Contraseña" name="password" id="password">
+                    <input type="text" placeholder="Usuario o Email" name="usuario" id="usuario" required>
+                    <input type="password" placeholder="Contraseña" name="password" id="password" required>
                     <button>Iniciar Session</button>
                 </form>
                 <div class="separacion">
@@ -30,12 +30,12 @@
                 <a  href="" class="recuperar-contraseña">¿Olvidaste tu contraseña?</a>
             </div>
             <div class="registro">
-                <p>¿No tienes una cuenta? <button>REGISTRATE</button></p>
+                <p>¿No tienes una cuenta?
+                    <a href="?account=singup">REGISTRATE</a>
+                </p>
             </div>
         </div>
     </main>
-
-
 
 
     <footer>

@@ -8,7 +8,7 @@
 /**************************************************************/
 
 if(empty($_GET['url'])){
-    $url = 'inicio/inicio';
+    $url = 'iniciologin/iniciologin';
     // var_dump($_GET['url']);
 }else{
     $url = $_GET['url'];

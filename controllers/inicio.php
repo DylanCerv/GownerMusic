@@ -8,7 +8,6 @@ class Inicio extends Controllers{
     }
 
     public function inicio($params){
-        // echo "mensaje desde el controlador inicio, clase inicio, y metodo inicio";
         $this->view->getViews($this, 'inicio');
     }
 
