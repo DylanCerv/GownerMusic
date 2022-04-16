@@ -17,7 +17,7 @@
             <div class="contenedor-formulario-login">
                 <h1>GownerMusic</h1>
                 <form class="formulario-login" method="post">
-                    <input type="text" placeholder="Usuario o Email" name="usuario" id="usuario" required>
+                    <input type="text" placeholder="Usuario o Email" name="username" id="usuario" required>
                     <input type="password" placeholder="Contraseña" name="password" id="password" required>
                     <button>Iniciar Session</button>
                 </form>
@@ -31,7 +31,7 @@
             </div>
             <div class="registro">
                 <p>¿No tienes una cuenta?
-                    <a href="?account=singup">REGISTRATE</a>
+                    <a href="?cm=singup&m=register">REGISTRATE</a>
                 </p>
             </div>
         </div>

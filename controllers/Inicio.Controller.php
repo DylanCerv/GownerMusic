@@ -1,10 +1,10 @@
 <?php
 
 
-class LoginController{
+class InicioController{
 
-
-    public function log(){
+    
+    public function login(){
         require_once "views/login/login.php";
     }
 
