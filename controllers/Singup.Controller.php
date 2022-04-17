@@ -1,7 +1,14 @@
 <?php
 
+require_once "Url.Controller.php";
 
-class SingupController{
+class SingupController extends URLs{
+
+    
+    public function __construct(){
+        $this->URLRegister();
+        $this->validate = new Singup();
+    }
 
 
     public function register(){
@@ -9,7 +16,6 @@ class SingupController{
     }
 
     public function validateData($username, $email, $v_email, $password, $v_password){
-
         //Eliminamos los espacios en blanco y pasamos todo a minuscula
         $username = strlen(trim($username));
         $email = strlen(trim($email));
@@ -51,6 +57,17 @@ class SingupController{
         }
     }
 
+    public function validateUsernameExist_DB($username){
+        if (!empty($username)){
+            $this->validate->validateUsernameExist($username);
+        }
+    }
+
+    public function validateEmailExist_DB($email){
+        if (!empty($email)){
+            $this->validate->validateEmailExist($email);
+        }
+    }
 
 }
 

@@ -22,7 +22,7 @@
                 <hr>
             </div>
         </div>
-        <form action="libraries/core/singup.php" method="post">
+        <form action="modules/singup.php" method="post">
             <input type="text" class="usuario" name="username" id="usuario" placeholder="Nombre de Usuario" required>
             <input type="email" class="correo" name="email" id="email" placeholder="Correo electronico" required>
             <input type="email" class="correo" name="v_email" id="v_email" placeholder="Confirmar correo electronico" required>
@@ -34,16 +34,6 @@
             <button>Registrarse</button>
         </form>
     </main>
-
-    <?php
-    var_dump($_POST['username'].'<br>');
-    var_dump($_POST['email'].'<br>');
-    var_dump($_POST['v_email'].'<br>');
-    var_dump($_POST['password'].'<br>');
-    var_dump($_POST['v_password'].'<br>');
-
-    ?>
-
 
     <footer>
         <div class="enlaces">

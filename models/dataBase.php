@@ -7,19 +7,29 @@ class DataBase{
     const USERNAME = 'root';
     const PASSWORD = '';
     
-    
-    public static function conection(){
+
+    public function __construct(){
+        $this->conection();
+    }
+
+    public function conection(){
         try {
-            $conexion = new PDO(
+            $this->conexion = new PDO(
                 'mysql:host='.self::HOST.
                 ';dbname='.self::DB_NAME,
                 self::USERNAME,
                 self::PASSWORD
             );
-            $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->conexion->exec("SET CHARACTER SET utf8");
         } catch (PDOException $e) {
             echo 'Conexion a la base de datos fallida: '.$e->getMessage();
+            exit();
         }
+    }
+
+    public function getConnection(){
+        return $this->conexion;
     }
 
 }
