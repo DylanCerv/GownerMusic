@@ -19,7 +19,7 @@ class Singup{
         $this->numRows = $this->result->rowCount();
         // var_dump($this->numRows);
         
-        if ($this->numRows > 0){
+        if ($this->numRows !== 0){
             //Usuario ya registrado
             return TRUE;
         }else{
@@ -35,17 +35,14 @@ class Singup{
         $this->result->execute(array($email));
         $this->numRows = $this->result->rowCount();
         // var_dump($this->numRows);
-        
-        if ($this->numRows > 0){
-            //Usuario ya registrado
+
+        if ($this->numRows !== 0){
+            //Email ya registrado
             return TRUE;
         }else{
-            //Usuario no registrado
+            //Email no registrado
             return FALSE;
         }
     }
 
 }
-
-$a = new Singup();
-$a -> validateUsernameExist('j');

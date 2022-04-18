@@ -4,16 +4,18 @@ require_once "Url.Controller.php";
 
 class SingupController extends URLs{
 
-    
+
     public function __construct(){
         $this->URLRegister();
         $this->validate = new Singup();
     }
 
 
+
     public function register(){
         require_once "views/singup/singup.php";
     }
+
 
     public function validateData($username, $email, $v_email, $password, $v_password){
         //Eliminamos los espacios en blanco y pasamos todo a minuscula
@@ -22,7 +24,7 @@ class SingupController extends URLs{
         $v_email = strlen(trim($v_email));
         // $password = strlen(trim($password));
         // $v_password = strlen(trim($v_password));
-
+        
         if ($username < 1 ||
             $email < 1 ||
             $v_email < 1 ||
@@ -36,9 +38,21 @@ class SingupController extends URLs{
             }
     }
 
+
+    public function validateUsernameExist_DB($username){
+        trim($username);
+        
+        if (!empty($username)){
+            return $this->validate->validateUsernameExist($username);
+        }else{
+            echo "Campo Vacio";
+        }
+    }
+
+
     public function validateEmailRigth($email, $v_email){
         if (filter_var($email, FILTER_VALIDATE_EMAIL) &&
-            filter_var($v_email, FILTER_VALIDATE_EMAIL)) {
+        filter_var($v_email, FILTER_VALIDATE_EMAIL)) {
             //Es un email valido
             return TRUE;
         }else{
@@ -47,8 +61,30 @@ class SingupController extends URLs{
         }
     }
 
+
+    public function validateSameEmail($email, $v_email){
+        if ($email == $v_email){
+            //Emails identicos
+            return TRUE;
+        }else{
+            //Emails diferentes
+            return FALSE;
+        }
+    }
+
+
+    public function validateEmailExist_DB($email){
+        trim($email);
+        if (!empty($email)){
+            return $this->validate->validateEmailExist($email);
+        }else{
+            echo "Campo Vacio";
+        }
+    }
+
+
     public function validatePassword($password, $v_password){
-        if (strcmp($password, $v_password) !== 0){
+        if ($password == $v_password){
             //Son iguales
             return TRUE;
         }else{
@@ -57,17 +93,14 @@ class SingupController extends URLs{
         }
     }
 
-    public function validateUsernameExist_DB($username){
-        if (!empty($username)){
-            $this->validate->validateUsernameExist($username);
-        }
-    }
 
-    public function validateEmailExist_DB($email){
-        if (!empty($email)){
-            $this->validate->validateEmailExist($email);
-        }
-    }
+
+
+
+
 
 }
 
+$a = new SingupController();
+echo"<br>";
+$a->validateSameEmail('dylan@gmail.com','dylan@gmail.com');

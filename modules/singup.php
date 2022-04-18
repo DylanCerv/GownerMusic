@@ -8,45 +8,46 @@ if(isset($_POST)){
     $v_email = $_POST['v_email'];
     $password = $_POST['password'];
     $v_password = $_POST['v_password'];
+
+    echo "username: ".$username."<br>";
+    echo "email: ".$email."<br>";
+    echo "v_email: ".$v_email."<br>";
+    echo "password: ".$password."<br>";
+    echo "v_password: ".$v_password."<br>";
 }
 
+echo "<br><br><br>";
 
 $register = new SingupController();
+
 if ($register->validateData($username, $email, $v_email, $password, $v_password)){
-    echo "LLene todos los campos porfavor";
+    echo "LLene todos los campos porfavor".'<br>';
 }else {
-    echo "Listo campos llenos";
+    echo "Listo campos llenos".'<br>';
 }
 
-if ($register->validateEmailRigth($email, $v_email) == TRUE){
-
-}
-if ($register->validateUsernameExist_DB($username) == TRUE) {
-    echo "El usuario ya existe";
+if ($register->validateUsernameExist_DB($username) === TRUE) {
+    echo "El usuario ya existe".'<br>';
 }else {
-    echo "Usuario libre";
+    echo "Usuario libre".'<br>';
 }
 
-if ($register->validateEmailExist_DB($email) == TRUE) {
-    echo "";
-}else {
-    echo "";
-}
-die;
-
-$usernamem="";
-var_dump(empty($usernamem));
-
-$email = "adas@gmail.com";
-$v_email = "adas@gmail.com";
-
-
-if (filter_var($email, FILTER_VALIDATE_EMAIL) &&
-    filter_var($v_email, FILTER_VALIDATE_EMAIL)){
-    //Es un email valido
-    var_dump( TRUE);
+if ($register->validateEmailRigth($email, $v_email) === TRUE){
+    echo "Email valido".'<br>';
+    if ($register->validateSameEmail($email, $v_email) === TRUE){
+        echo "Emails identicos".'<br>';
+        if ($register->validateEmailExist_DB($email) === TRUE){
+            echo "El email ya existe".'<br>';
+        }else {
+            echo "Email libre".'<br>';
+        }
+    }else{
+        echo "Emails diferentes".'<br>';
+    }
 }else{
-    //No es un email valido
-    var_dump( FALSE);
-    
+    echo "Ingrese un email valdido";
 }
+
+
+
+
