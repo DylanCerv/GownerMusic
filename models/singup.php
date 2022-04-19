@@ -11,6 +11,7 @@ class Singup{
         $this->DB = $this->connection->getConnection();
     }
 
+
     public function validateUsernameExist($username){
         $queryPDO = "SELECT id FROM users WHERE username = ?";
 
@@ -28,6 +29,7 @@ class Singup{
         }
     }
 
+
     public function validateEmailExist($email){
         $queryPDO = "SELECT id FROM users WHERE email = ?";
 
@@ -44,5 +46,21 @@ class Singup{
             return FALSE;
         }
     }
+
+
+    public function addUser($username, $email, $hashPassword, $phone = NULL){
+        $queryPDO = "INSERT INTO users(username,email,passwords,phone) values(?,?,?,?);";
+
+        $this->result = $this->DB->prepare($queryPDO);
+        // $this->result->execute(array($username, $email, $hashPassword, $phone));
+        if ($this->result->execute(array($username, $email, $hashPassword, $phone)) == TRUE){
+            //Se agrego a la base de datos
+            return TRUE;
+        }else{
+            //No se agrego a la base de datos
+            return FALSE;
+        }
+    }
+
 
 }

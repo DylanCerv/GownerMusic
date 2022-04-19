@@ -7,7 +7,7 @@ class SingupController extends URLs{
 
     public function __construct(){
         $this->URLRegister();
-        $this->validate = new Singup();
+        $this->ModelSingup = new Singup();
     }
 
 
@@ -22,14 +22,17 @@ class SingupController extends URLs{
         $username = strlen(trim($username));
         $email = strlen(trim($email));
         $v_email = strlen(trim($v_email));
-        // $password = strlen(trim($password));
-        // $v_password = strlen(trim($v_password));
         
         if ($username < 1 ||
             $email < 1 ||
             $v_email < 1 ||
             $password < 1 ||
-            $v_password < 1){
+            $v_password < 1 ||
+            $username == NULL ||
+            $email == NULL ||
+            $v_email == NULL ||
+            $password == NULL ||
+            $v_password == NULL){
                 //No hay datos enviados
                 return TRUE;
             }else{
@@ -43,7 +46,7 @@ class SingupController extends URLs{
         trim($username);
         
         if (!empty($username)){
-            return $this->validate->validateUsernameExist($username);
+            return $this->ModelSingup->validateUsernameExist($username);
         }else{
             echo "Campo Vacio";
         }
@@ -76,14 +79,14 @@ class SingupController extends URLs{
     public function validateEmailExist_DB($email){
         trim($email);
         if (!empty($email)){
-            return $this->validate->validateEmailExist($email);
+            return $this->ModelSingup->validateEmailExist($email);
         }else{
             echo "Campo Vacio";
         }
     }
 
 
-    public function validatePassword($password, $v_password){
+    public function validateSamePassword($password, $v_password){
         if ($password == $v_password){
             //Son iguales
             return TRUE;
@@ -94,13 +97,15 @@ class SingupController extends URLs{
     }
 
 
+    public function hashPassword($username, $email, $password, $phone){
+        $hashPassword = password_hash($password, PASSWORD_DEFAULT);
+
+        $this->ModelSingup->addUser($username, $email, $hashPassword, $phone);
+    }
+
 
 
 
 
 
 }
-
-$a = new SingupController();
-echo"<br>";
-$a->validateSameEmail('dylan@gmail.com','dylan@gmail.com');
