@@ -12,6 +12,7 @@ class Singup{
     }
 
 
+
     public function validateUsernameExist($username){
         $queryPDO = "SELECT id FROM users WHERE username = ?";
 

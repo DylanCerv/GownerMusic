@@ -43,7 +43,7 @@ class SingupController extends URLs{
 
 
     public function validateUsernameExist_DB($username){
-        trim($username);
+        $username = trim($username);
         
         if (!empty($username)){
             return $this->ModelSingup->validateUsernameExist($username);
@@ -55,7 +55,7 @@ class SingupController extends URLs{
 
     public function validateEmailRigth($email, $v_email){
         if (filter_var($email, FILTER_VALIDATE_EMAIL) &&
-        filter_var($v_email, FILTER_VALIDATE_EMAIL)) {
+            filter_var($v_email, FILTER_VALIDATE_EMAIL)) {
             //Es un email valido
             return TRUE;
         }else{
@@ -77,7 +77,7 @@ class SingupController extends URLs{
 
 
     public function validateEmailExist_DB($email){
-        trim($email);
+        $email = trim($email);
         if (!empty($email)){
             return $this->ModelSingup->validateEmailExist($email);
         }else{

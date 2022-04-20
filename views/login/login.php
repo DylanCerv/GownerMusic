@@ -16,9 +16,9 @@
         <div class="formulario">
             <div class="contenedor-formulario-login">
                 <h1>GownerMusic</h1>
-                <form class="formulario-login" method="post">
-                    <input type="text" placeholder="Usuario o Email" name="username" id="usuario" required>
-                    <input type="password" placeholder="Contraseña" name="password" id="password" required>
+                <form class="formulario-login" method="post" action="modules/login.php">
+                    <input type="text" placeholder="Usuario o Email" name="usernameLogin" id="usernameLogin" >
+                    <input type="password" placeholder="Contraseña" name="passwordLogin" id="passwordLogin" ><!--required-->
                     <button>Iniciar Session</button>
                 </form>
                 <div class="separacion">

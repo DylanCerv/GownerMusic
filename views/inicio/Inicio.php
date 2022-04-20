@@ -1,3 +1,9 @@
+<?php
+
+require_once "modules/welcome.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,6 +27,7 @@
                     <a href="#" id="Contactos">Contactos</a>
                     <a href="#" id="Mensajes">Mensajes</a>
                     <a href="#" id="Notificaciones">Notificaciones</a>
+                    <a href="?cm=sesion&m=cerrar" id="Cerrar">Cerrar Session</a>
                 </nav>
             </div>
         </div>

@@ -9,9 +9,18 @@ class URLs{
                 require_once "models/singup.php";
             }
         }else{
-            return require_once "../models/singup.php";
+            require_once "../models/singup.php";
         }
     }
 
+    public function URLLogin(){
+        if (!empty($_GET)){
+            if ($_GET['cm'] == 'login' && $_GET['m'] == 'log'){
+                require_once "models/login.php";
+            }
+        }else{
+            require_once "../models/login.php";
+        }
+    }
 
 }

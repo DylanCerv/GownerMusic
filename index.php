@@ -12,6 +12,7 @@ require_once 'libraries/core/autoload.php';
 // require_once 'libraries/core/environment.php';
 #LOAD PARA CARGAR LOS CONTROLADORES
 // require_once 'libraries/core/loadController.php';
+date_default_timezone_set('America/Bogota');
 
 
 if (!isset($_GET['cm'])){
