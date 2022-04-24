@@ -23,14 +23,20 @@ GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
     grid-gap: 50px;
     text-align: center;
     justify-content: space-between;
-    margin: 10% 15% 5% 15%;
+    margin: 5% 15% 5% 15%;
 }
 
 main .imagen{
     width: 50%;
 }
 
+main .imagen img{
+    max-width: 70%;
+    border-radius: 90px;
+}
+
 main .formulario{
+    margin: auto;
     width: 35%;
 }
 
@@ -71,6 +77,10 @@ main div div form button{
 
 main .formulario .contenedor-formulario-login .separacion{
     margin: 2% 0;
+}
+
+main .formulario .contenedor-formulario-login .separacion img{
+    max-width: 100%;
 }
 
 main div div .boton-login-google button{
@@ -129,20 +139,22 @@ GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
     flex-direction: column;
 }
 
+.main-registro .formulario-registro .cabecera{
+    margin: 0 0 5% 0;
+    display: flex;
+}
+
 .main-registro .formulario-registro .cabecera img{
-    float: left;
+    /* float: left; */
     margin: 0 2%;
-    border: solid 1px black;
+    border-radius: 100%;
     width: 15%;
     height: 15%;
 }
 
 .main-registro .formulario-registro .cabecera h1{
     font-size: 1.9rem;
-}
-
-.main-registro .formulario-registro .cabecera{
-    margin: 0 0 5% 0;
+    margin: auto;
 }
 
 .main-registro .formulario-registro .cambio a{
@@ -207,15 +219,23 @@ header .contenedor-menu{
     background-color: #ffffff;
     height: 50%;
     padding: 1% 15%;
+    display: flex;
+    align-items: center;
 }
+
 header .contenedor-menu .buscador{
-    background-color: #ffffff;
-    float: left;
+    display: flex;
+    width: 50%;
+}
+
+header .contenedor-menu .buscador img{
+    margin-right: 1%;
+    width: 5%;
 }
 
 header .contenedor-menu .menu{
     text-align: right;
-    background-color: #ffffff;
+    width: 100%;
 }
 
 header .contenedor-menu .menu nav a{
@@ -285,13 +305,17 @@ CUERPO DE LA PAGINA
     padding: 0 0 10px 0;
 }
 
+.barra-crear-publicacion .posts{
+    margin: auto;
+    width: 85%;
+}
+
 .barra-crear-publicacion .crear-publicacion{
     background-color: #ffffff;
-    margin: auto;
     padding: 3%;
     background-color: transparent;
     border-radius: 100px;
-    width: 85%;
+    width: 100%;
     border-width: 1px;
     border-color: rgba(140, 140, 140, 0.734);
     text-align: left;

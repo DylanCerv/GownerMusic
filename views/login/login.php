@@ -11,7 +11,7 @@
 
     <main class="main-login">
         <div class="imagen">
-            <img src="#" alt="Imagen de login">
+            <img src="img/cover.jpg" alt="Imagen de login">
         </div>
         <div class="formulario">
             <div class="contenedor-formulario-login">
@@ -22,7 +22,7 @@
                     <button>Iniciar Session</button>
                 </form>
                 <div class="separacion">
-                    <img src="" alt="Separacion">
+                    <img src="img/separacion.jpg" alt="Separacion">
                 </div>
                 <div class="boton-login-google">
                     <button><img src="" alt="Img Google"> Iniciar Sesion con Google</button>

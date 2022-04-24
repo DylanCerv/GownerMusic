@@ -14,7 +14,7 @@
     <main class="main-registro">
         <div class="formulario-registro">
             <div class="cabecera">
-                <img src="" alt="Logo">
+                <img src="img/logo.png" alt="Logo">
                 <h1>Unete a GownerMusic</h1>
             </div>
             <div class="cambio">
