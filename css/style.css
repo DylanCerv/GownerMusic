@@ -446,7 +446,11 @@ CUERPO DE LA PAGINA
 
 /******************** PUBLICACION ******************/
 
-.contenedor-centro .publicacion .publicacion-perfil a{
+.publicacion{
+    margin-bottom: 2%;
+}
+
+.publicacion .publicacion-perfil a{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -454,44 +458,44 @@ CUERPO DE LA PAGINA
     margin: 0 0 2% 0;
 }
 
-.contenedor-centro .publicacion .publicacion-perfil a img{
+.publicacion .publicacion-perfil a img{
     width: 10%;
     border-radius: 100%;
     margin: 0 2% 0 1%;
 }
 
-.contenedor-centro .publicacion .publicacion-contenido{
+.publicacion .publicacion-contenido{
     margin: 1%;
     /* width: 100%; */
 }
 
-.contenedor-centro .publicacion .publicacion-contenido p{
+.publicacion .publicacion-contenido p{
     margin: 0 0 1% 0;
     font-size: 1rem;
 }
 
-.contenedor-centro .publicacion .publicacion-contenido img{
+.publicacion .publicacion-contenido img{
     width: 100%;
 }
 
-.contenedor-centro .publicacion .publicacion-opciones{
+.publicacion .publicacion-opciones{
     display: flex;
     flex-direction: row;
 }
 
-.contenedor-centro .publicacion .publicacion-opciones a{
+.publicacion .publicacion-opciones a{
     display: flex;
     flex-direction: row;
     margin: 2% 2%;
     align-items: center;
 }
 
-.contenedor-centro .publicacion .publicacion-opciones a img{
+.publicacion .publicacion-opciones a img{
     width: 25%;
     margin-right: 5%;
 }
 
-.contenedor-centro .publicacion .publicacion-opciones a p{
+.publicacion .publicacion-opciones a p{
     font-size: .9rem;
 }
 
@@ -506,6 +510,57 @@ CUERPO DE LA PAGINA
 
 GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG*/
 
+main.perfil{
+    display: flex;
+    grid-template-columns: 2, 0.5fr;
+    grid-gap: 25px;
+    flex-direction: row;
+    margin: 0 14.5% 0 20%;
+}
+
+main .contenedor-perfil{
+    width: 69%;
+}
+
+main .contenedor-perfil-usuario{
+    background-color: #ffffff;
+    border: solid 1px #bfbfc0;
+    border-radius: 10px;
+}
+
+main .contenedor-perfil-usuario .fotos{
+    position: relative;
+}
+
+main .contenedor-perfil-usuario .fotos .foto-portada{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+}
+
+
+main .contenedor-perfil-usuario .fotos .foto-perfil{
+    position: relative;
+    border-radius: 100%;
+    width: 15%;
+    margin: 17% 0 0 4%;
+}
+
+main .contenedor-perfil-usuario .fotos .nombre-usuario{
+    margin-left: 2%;
+}
+
+main .contenedor-perfil-usuario .descripcion-user{
+    margin: 2%;
+}
+
+main .contenedor-perfil .profile hr{
+    margin: 2% 0 2% 0;
+}
+
+main .contenedor-derecho{
+    width: 28.1%;
+}
 
 
 

@@ -23,7 +23,8 @@ require_once "modules/welcome.php";
             </div>
             <div class="menu">
                 <nav>
-                    <a href="#" id="Inicio">Inicio</a>
+                    <a href="?cm=pagei&m=home" id="Inicio">Inicio</a>
+                    <a href="?cm=pagei&m=perfil" id="Inicio">Perfil</a>
                     <a href="#" id="Contactos">Contactos</a>
                     <a href="#" id="Mensajes">Mensajes</a>
                     <a href="#" id="Notificaciones">Notificaciones</a>
