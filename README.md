@@ -1,7 +1,7 @@
 # GownerMusic
-Probar Proyecto
 
-## Install API
+## Probar Proyecto
+
 >>> 1) Installar tecnologias ```xampp``` (https://www.apachefriends.org/es/index.html)
 
 >>> 2) Borrar todo lo que haya en la carpeta de xampp (C:\xampp\htdocs)
