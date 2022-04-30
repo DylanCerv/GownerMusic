@@ -547,7 +547,9 @@ main .contenedor-perfil-usuario .fotos .foto-perfil{
 }
 
 main .contenedor-perfil-usuario .fotos .nombre-usuario{
+    width: 20%;
     margin-left: 2%;
+    text-align: center;
 }
 
 main .contenedor-perfil-usuario .descripcion-user{

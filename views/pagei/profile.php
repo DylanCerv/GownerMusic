@@ -1,3 +1,8 @@
+<?php
+
+require_once "modules/perfil.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,51 +13,33 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header-inicio">
-        <div class="contenedor-menu">
-            <div class="buscador">
-                <img src="img/lupa.png" alt="lupa del buscador">
-                <input type="search" name="buscador" id="" placeholder="Buscador">
-            </div>
-            <div class="menu">
-                <nav>
-                    <a href="?cm=pagei&m=home" id="Inicio">Inicio</a>
-                    <a href="?cm=pagei&m=perfil" id="Perfil">Perfil</a>
-                    <a href="#" id="Contactos">Contactos</a>
-                    <a href="#" id="Mensajes">Mensajes</a>
-                    <a href="#" id="Notificaciones">Notificaciones</a>
-                    <a href="?cm=sesion&m=cerrar" id="Cerrar">Cerrar Session</a>
-                </nav>
-            </div>
-        </div>
+    
+    <?php require_once "views/template/nav/nav.php"; ?>
 
-    </header>
     <main class="perfil">
         <div class="contenedor-perfil">
             <div class="profile">
                 <div class="contenedor-perfil-usuario">
                     <div class="fotos">
                         <img src="https://media-exp1.licdn.com/dms/image/C4D16AQGKgCxFE9D5Xg/profile-displaybackgroundimage-shrink_200_800/0/1644900203321?e=1654732800&v=beta&t=plNZlVVT8oIjV8IEXffbO-3MQcvlEO1LEE_vb2p5UZY" alt="foto-portada" class="foto-portada">
-                        <img src="img/perfilMio.jpg" alt="foto-perfil" class="foto-perfil">
-                        <h3 class="nombre-usuario">Nombre del Usuario</h3>
+                        <img src="img/user_anonimo.jpg" alt="foto-perfil" class="foto-perfil">
+                        <h3 class="nombre-usuario"><?= $_SESSION['username_user_perfil']?></h3>
                     </div>
                     <div class="descripcion-user">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio omnis vero dignissimos iure rerum quis quos suscipit minus ex, nihil minima quod fugit ipsa labore inventore deleniti doloremque ea autem.
-                        </p>
+                        <p> <?= $_SESSION['description_perfil'] ?> </p>
                     </div>
                 </div>
                 <hr>
                 <div class="publicacion">
                     <div class="publicacion-perfil">
                         <a href="#">
-                            <img src="img/perfilMio.jpg" alt="foto de perfil">
-                            <h4>Nombre de usuario</h4>
+                            <img src="img/user_anonimo.jpg" alt="foto de perfil">
+                            <h4><?= $_SESSION['username_user_perfil']?></h4>
                         </a>
                     </div>
                     <div class="publicacion-contenido">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit inventore consectetur qui sint vitae odio. Nesciunt unde porro nihil, veritatis eveniet et voluptatibus quasi, molestiae qui debitis hic, illo ad.</p>
-                        <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="publicacion-documento">
+                        <img src="img/portada_anonimo.jpg" alt="publicacion-documento">
                     </div>
                 </div>
             </div>

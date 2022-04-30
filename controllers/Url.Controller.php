@@ -23,4 +23,14 @@ class URLs{
         }
     }
 
+    public function URLPerfil(){
+        if (!empty($_GET)){
+            if ($_GET['cm'] == 'pagei' && $_GET['m'] == 'perfil'){
+                require_once "models/perfil.php";
+            }
+        }else{
+            require_once "../models/login.php";
+        }
+    }
+
 }

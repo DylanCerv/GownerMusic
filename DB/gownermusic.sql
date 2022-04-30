@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-04-2022 a las 02:30:20
+-- Tiempo de generación: 30-04-2022 a las 23:29:20
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -34,6 +34,14 @@ CREATE TABLE `perfil` (
   `img_perfil` varchar(255) DEFAULT NULL,
   `img_portada` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `perfil`
+--
+
+INSERT INTO `perfil` (`id`, `id_user`, `description`, `img_perfil`, `img_portada`) VALUES
+(1, 43, 'Descripción del usuario 2, me gusta los negocios, soy una persona autodidacta y muy extrovertida', NULL, NULL),
+(2, 42, 'Soy una persona de negocios pero también aprecio la música en cualquier momento', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -70,7 +78,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `email`, `passwords`, `last_session`, `token`, `phone`) VALUES
 (42, 'dylan', 'dylan@gmail.com', '$2y$10$IawLbMAhizpuNKKY/vOBmOEyoejvunW/AJZRrkfIvPYTXP2wHE9aW', '2022-04-22', '', 0),
-(43, 'po', 'power102004@gmail.com', '$2y$10$kQtrDPaGvNQVGD1sBmMNUOS4Uka5OVOT64iXfmomnlCHMZJdG1vfG', '2022-04-22', '', 0);
+(43, 'po', 'power102004@gmail.com', '$2y$10$kQtrDPaGvNQVGD1sBmMNUOS4Uka5OVOT64iXfmomnlCHMZJdG1vfG', '2022-04-30', '', 0);
 
 --
 -- Índices para tablas volcadas
@@ -104,7 +112,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `perfil`
 --
 ALTER TABLE `perfil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `posts`
