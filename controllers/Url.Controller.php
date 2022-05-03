@@ -1,6 +1,6 @@
 <?php
 
-class URLs{
+class URLsControllers{
 
 
     public function URLRegister(){
@@ -30,6 +30,17 @@ class URLs{
             }
         }else{
             require_once "../models/login.php";
+        }
+    }
+
+
+    public function URLPosts(){
+        if (!empty($_GET)){
+            if ($_GET['cm'] == 'posts' && $_GET['m'] == 'new'){
+                require_once "models/posts.php";
+            }
+        }else{
+            require_once "../models/posts.php";
         }
     }
 

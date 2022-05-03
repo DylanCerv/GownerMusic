@@ -2,7 +2,7 @@
 
 require_once "Url.Controller.php";
 
-class LoginController extends URLs{
+class LoginController extends URLsControllers{
 
 
     public function __construct(){

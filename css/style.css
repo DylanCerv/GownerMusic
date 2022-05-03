@@ -565,16 +565,48 @@ main .contenedor-derecho{
 }
 
 
+/*GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 
+================================================ PAGINA DE POST ================================================
 
+GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG*/
 
+main.post .formulario-post{
+    text-align: center;
+    background-color: #ffffff;
+    border-color: solid 1px #bfbfc0;
+    margin: 5% 22.5%;
+    padding: 2%;
+}
 
+main.post .formulario-post h2{
+    margin-bottom: 1%;
+}
 
+main.post .formulario-post .envio-post{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
 
+main.post .formulario-post .envio-post #mensaje-post{
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 1.5%;
+    margin-bottom: 1%;
+}
 
+main.post .formulario-post .envio-post #archivo{
+    margin-bottom: 1%;
+}
 
-
-
+main.post .formulario-post .envio-post button{
+    max-width: 20%;
+    padding: 0.5%;
+    background-color: rgb(194, 194, 194);
+    border: solid 1px;
+    border-radius: 100px;
+}
 
 
 /*GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG

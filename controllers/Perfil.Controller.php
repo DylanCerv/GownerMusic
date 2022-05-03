@@ -2,7 +2,7 @@
 
 require_once "Url.Controller.php";
 
-class PerfilController extends URLs{
+class PerfilController extends URLsControllers{
 
 
     public function __construct(){

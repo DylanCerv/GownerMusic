@@ -2,7 +2,7 @@
 
 require_once "Url.Controller.php";
 
-class SingupController extends URLs{
+class SingupController extends URLsControllers{
 
 
     public function __construct(){
