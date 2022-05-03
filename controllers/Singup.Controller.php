@@ -101,6 +101,8 @@ class SingupController extends URLsControllers{
         $hashPassword = password_hash($password, PASSWORD_DEFAULT);
 
         $this->ModelSingup->addUser($username, $email, $hashPassword, $phone);
+        $this->ModelSingup->addPerfil($username, $email, $hashPassword);
+
     }
 
 

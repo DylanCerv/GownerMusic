@@ -35,12 +35,15 @@ class URLsControllers{
 
 
     public function URLPosts(){
-        if (!empty($_GET)){
+        if (empty($_GET)){
+            require_once "../models/posts.php";
+        }else{
             if ($_GET['cm'] == 'posts' && $_GET['m'] == 'new'){
                 require_once "models/posts.php";
             }
-        }else{
-            require_once "../models/posts.php";
+            if ($_GET['cm'] == 'pagei' && $_GET['m'] == 'home'){
+                require_once "models/posts.php";
+            }
         }
     }
 

@@ -9,11 +9,14 @@ class PostsController extends URLsControllers{
         $this->ModelPosts = new Post();
     }
 
+
     public function new(){
         require_once "views/post/post.php";
     }
 
 
+
+    ### CARGAR PUBLICACION EN LA BASE DE DATOS
 
     public function uniqueFileName($ruteTmp, $nameFile, $typeFile){
         $md5 = substr(md5(rand(0, PHP_INT_MAX)), 5);
@@ -37,5 +40,14 @@ class PostsController extends URLsControllers{
 
     public function uploadText_DB($descriptionText){
         $this->ModelPosts->uploadText($descriptionText);
+    }
+
+
+
+    ### OBTENER PUBLICACION DE LA BASE DE DATOS
+
+    public function getPosts_DB(){
+        $this->ModelPosts->getPosts();
+        // $_SESSION['postsDATA'];
     }
 }

@@ -63,5 +63,17 @@ class Singup{
         }
     }
 
+    public function addPerfil($username, $email, $hashPassword){
+        $queryPDO = "SELECT id FROM users WHERE username = ? and email = ? and passwords = ?;";
+        $this->result = $this->DB->prepare($queryPDO);
+        $this->result->execute(array($username, $email, $hashPassword));
+        $this->datos = $this->result->fetchAll();
+        
+        $queryPDO = "INSERT INTO perfil(id_user) values(?);";
+
+        $this->result = $this->DB->prepare($queryPDO);
+        // $this->result->execute(array($username, $email, $hashPassword, $phone));
+        $this->result->execute(array($this->datos[0]['id']));
+    }
 
 }

@@ -7,10 +7,16 @@ class Post{
     public function __construct(){
         $this->connection = new DataBase();
         $this->DB = $this->connection->getConnection();
-        session_start();
+        $this->session_start_ON();
     }
 
+    public function session_start_ON(){
+        if (empty($_GET)) {
+            session_start();
+        }
+    }
 
+    ### CARGAR PUBLICACION EN LA BASE DE DATOS
 
     public function uploadAll($descriptionText, $ruteFile_DB){
         $query = "INSERT INTO posts(id_user, content, media_dir) values(?,?,?);";
@@ -29,6 +35,15 @@ class Post{
         $query = "INSERT INTO posts(id_user, content) values(?,?);";
         $this->result = $this->DB->prepare($query);
         $this->result->execute(array($_SESSION['id_user'], $descriptionText));
+    }
+
+    ### OBTENER PUBLICACION DE LA BASE DE DATOS
+    public function getPosts(){
+        $query = "SELECT * FROM posts";
+
+        $this->result = $this->DB->prepare($query);
+        $this->result->execute();
+        $_SESSION['postsDATA'] = $this->result->fetchAll(PDO::FETCH_ASSOC);
     }
 
 

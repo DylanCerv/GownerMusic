@@ -1,6 +1,7 @@
 <?php
 
 require_once "modules/welcome.php";
+require_once "modules/getposts.php";
 
 ?>
 
@@ -32,7 +33,7 @@ require_once "modules/welcome.php";
                 </div>
                 <hr class="linea-contenendor-perfil-resumen">
                 <div class="descripcion">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aperiam.</p>
+                    <p><?= $_SESSION['description_perfil'] ?></p>
                 </div>
                 <hr class="linea-contenendor-favoritos">
                 <a href="#" class="contenedor-favoritos">
@@ -153,16 +154,19 @@ require_once "modules/welcome.php";
                 </div> -->
             </div>
             <hr>
+            <?php
+            foreach ($_SESSION['postsDATA'] as $datos){
+            ?>
             <div class="publicacion">
                 <div class="publicacion-perfil">
                     <a href="#">
                         <img src="img/perfilMio.jpg" alt="foto de perfil">
-                        <h4><?= $_SESSION['username_user'] ?></h4>
+                        <h4>aaaaaaaaa</h4>
                     </a>
                 </div>
                 <div class="publicacion-contenido">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit inventore consectetur qui sint vitae odio. Nesciunt unde porro nihil, veritatis eveniet et voluptatibus quasi, molestiae qui debitis hic, illo ad.</p>
-                    <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="publicacion-documento">
+                    <p><?= $datos['content']?></p>
+                    <img src="<?= $datos['media_dir'] ?>" alt="publicacion-documento">
                 </div>
                 <div class="publicacion-opciones">
                     <a href="">
@@ -179,6 +183,9 @@ require_once "modules/welcome.php";
                     </a> -->
                 </div>
             </div>
+            <?php
+            }
+            ?>
         </div>
         <div class="contenedor-lado-derecho ">
             <div class="publicidad">
