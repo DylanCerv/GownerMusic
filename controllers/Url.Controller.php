@@ -19,7 +19,21 @@ class URLsControllers{
                 require_once "models/login.php";
             }
         }else{
-            require_once "../models/login.php";
+            $url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+            $urlArray = explode('/',$url);
+            foreach ($urlArray as $valores) {
+                if ($valores == 'modules') {
+                    $modules = $valores;
+                }
+                if ($valores == 'login.php') {
+                    $login_php = $valores;
+                }
+            }
+            if(isset($modules) && isset($login_php)){
+                require_once "../models/login.php";
+            }else{
+                require_once "models/login.php";
+            }
         }
     }
 
@@ -43,6 +57,16 @@ class URLsControllers{
             }
             if ($_GET['cm'] == 'pagei' && $_GET['m'] == 'home'){
                 require_once "models/posts.php";
+            }
+        }
+    }
+
+    public function URLInicio(){
+        if (empty($_GET)){
+            require_once "../models/inicio.php";
+        }else{
+            if ($_GET['cm'] == 'pagei' && $_GET['m'] == 'home'){
+                require_once "models/inicio.php";
             }
         }
     }

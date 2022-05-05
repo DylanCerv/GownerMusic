@@ -73,6 +73,7 @@ class Login{
         if ($this->numRows != 0){
             $_SESSION['id_perfil'] = $data[0]['id'];
             $_SESSION['id_user_perfil'] = $data[0]['id_user'];
+            $_SESSION['username_perfil'] = $data[0]['username_perfil'];
             $_SESSION['description_perfil'] = $data[0]['description'];
             $_SESSION['img_perfil_perfil'] = $data[0]['img_perfil'];
             $_SESSION['img_portada'] = $data[0]['img_portada'];

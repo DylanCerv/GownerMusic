@@ -22,7 +22,7 @@ if(empty($_POST)){
 $register = new SingupController();
 
 //Validar que todos los campos esten llenos
-if ($register->validateData($username, $email, $v_email, $password, $v_password) || $username == NULL){
+if ($register->validateData($username, $email, $v_email, $password, $v_password) === TRUE || $username == NULL){
     echo "<script>alert('ERROR: Llene todos los campos porfavor');window.location='../'</script>";
 }else{
     //Comprobar si el usuario ya se encuentra registrado

@@ -106,8 +106,7 @@ class SingupController extends URLsControllers{
     }
 
 
-
-
-
-
 }
+
+$a = new SingupController();
+$a->validateData('da', 'dasda', 'das', 'jhfgj', '');

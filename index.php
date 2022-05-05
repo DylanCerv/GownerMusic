@@ -16,9 +16,9 @@ date_default_timezone_set('America/Bogota');
 
 
 if (!isset($_GET['cm'])){
-    if (file_exists("controllers/Inicio.Controller.php")) {
-        require_once "controllers/Inicio.Controller.php";
-        $controller = new InicioController();
+    if (file_exists("controllers/Login.Controller.php")) {
+        require_once "controllers/Login.Controller.php";
+        $controller = new LoginController();
         call_user_func(array($controller, 'login'));//Llamamos un metodo del controlador
     }else {
         require_once "controllers/Errors.Controller.php";

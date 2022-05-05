@@ -1,7 +1,4 @@
 
-
-
-
 <?php
     #HEAD
     require_once "views/template/head/head.php";

@@ -15,5 +15,9 @@ class PerfilController extends URLsControllers{
         return $this->ModelPerfil->validate_id_URL($idUser);
     }
 
+    public function getPostsPerfil_DB($idUser){
+        return $this->ModelPerfil->getPostsPerfil($idUser);
+    }
+    
 
 }

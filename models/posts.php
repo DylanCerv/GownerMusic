@@ -36,15 +36,4 @@ class Post{
         $this->result = $this->DB->prepare($query);
         $this->result->execute(array($_SESSION['id_user'], $descriptionText));
     }
-
-    ### OBTENER PUBLICACION DE LA BASE DE DATOS
-    public function getPosts(){
-        $query = "SELECT * FROM posts";
-
-        $this->result = $this->DB->prepare($query);
-        $this->result->execute();
-        $_SESSION['postsDATA'] = $this->result->fetchAll(PDO::FETCH_ASSOC);
-    }
-
-
 }

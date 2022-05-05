@@ -41,13 +41,4 @@ class PostsController extends URLsControllers{
     public function uploadText_DB($descriptionText){
         $this->ModelPosts->uploadText($descriptionText);
     }
-
-
-
-    ### OBTENER PUBLICACION DE LA BASE DE DATOS
-
-    public function getPosts_DB(){
-        $this->ModelPosts->getPosts();
-        // $_SESSION['postsDATA'];
-    }
 }

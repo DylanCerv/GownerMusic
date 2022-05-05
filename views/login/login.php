@@ -1,9 +1,16 @@
 
 
-
 <?php
+
+    session_start();
+
+    if (isset($_SESSION['id_user'])){
+        header("Location: ?cm=pagei&m=home");
+    }
+
     #HEAD
     require_once "views/template/head/head.php";
+    
 ?>
 
 <body>

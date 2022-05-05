@@ -10,7 +10,9 @@ class LoginController extends URLsControllers{
         $this->ModelLogin = new Login();
     }
 
-
+    public function login(){
+        require_once "views/login/login.php";
+    }
 
     public function log(){
         require_once "views/login/login.php";
