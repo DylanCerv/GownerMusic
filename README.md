@@ -20,7 +20,7 @@
 >>> 1) Entrar a la carpeta del proyecto llamada ```DB```
 <img src="tuto/DB.JPG" alt="DB"/>
 
-<img src="tuto/FILEDB.JPG" alt="FILEDB"/>
+<img src="tuto/FILED.JPG" alt="FILED"/>
 
 
 >>> 2) Abrir en el navagador la ruta (http://localhost/phpmyadmin)
