@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-05-2022 a las 20:12:27
+-- Tiempo de generación: 20-05-2022 a las 19:45:22
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -41,8 +41,8 @@ CREATE TABLE `perfil` (
 --
 
 INSERT INTO `perfil` (`id`, `id_user`, `username_perfil`, `description`, `img_perfil`, `img_portada`) VALUES
-(1, 43, 'power', 'Descripción del usuario 2, me gusta los negocios, soy una persona autodidacta y muy extrovertida', NULL, NULL),
-(2, 42, 'dylan', 'Soy una persona de negocios pero también aprecio la música en cualquier momento', NULL, NULL),
+(1, 43, 'power', 'Descripción del usuario 2, me gusta los negocios, soy una persona autodidacta y muy extrovertida', 'img/perfilmio.jpg', NULL),
+(2, 42, 'dylan', 'Soy una persona de negocios pero también aprecio la música en cualquier momento', 'img/dylan.jpg', NULL),
 (9, 54, 'an', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
@@ -67,7 +67,9 @@ INSERT INTO `posts` (`id`, `id_user`, `content`, `media_dir`) VALUES
 (7, 43, '2c1', 'x.files/image/6f5a5ccd23e30365b1015f6b892.composer.png'),
 (8, 43, 'github', 'x.files/image/9c26356899120eed11f0c3ff02a.GitHub.png'),
 (9, 43, 'https://web.telegram.org/k/', NULL),
-(10, 42, 'dylan este es', 'x.files/application/ee66170fbbe9a80f7960c9a24d0.CV-C-(English).pdf');
+(10, 42, 'dylan este es', 'x.files/application/ee66170fbbe9a80f7960c9a24d0.CV-C-(English).pdf'),
+(11, 43, 'SUSUSUSUUSUSUSUUUUUUUUUUUUUUUU', NULL),
+(13, 42, 'Paisaje', 'x.files/image/4926eed57c8d584bd15995f9884.paisaje-natural.jpg');
 
 -- --------------------------------------------------------
 
@@ -90,8 +92,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `passwords`, `last_session`, `token`, `phone`) VALUES
-(42, 'dylan', 'dylan@gmail.com', '$2y$10$IawLbMAhizpuNKKY/vOBmOEyoejvunW/AJZRrkfIvPYTXP2wHE9aW', '2022-05-04', '', 0),
-(43, 'po', 'power102004@gmail.com', '$2y$10$kQtrDPaGvNQVGD1sBmMNUOS4Uka5OVOT64iXfmomnlCHMZJdG1vfG', '2022-05-05', '', 0),
+(42, 'dylan', 'dylan@gmail.com', '$2y$10$IawLbMAhizpuNKKY/vOBmOEyoejvunW/AJZRrkfIvPYTXP2wHE9aW', '2022-05-20', '', 0),
+(43, 'po', 'power102004@gmail.com', '$2y$10$kQtrDPaGvNQVGD1sBmMNUOS4Uka5OVOT64iXfmomnlCHMZJdG1vfG', '2022-05-20', '', 0),
 (54, 'an', 'dominograt@gmail.com', '$2y$10$gbcs5l12MftRD516cuTgU.DgubEbwDLDRAVPPG3Hw80wrglTKHC8i', '2022-05-05', '', 0);
 
 --
@@ -132,7 +134,7 @@ ALTER TABLE `perfil`
 -- AUTO_INCREMENT de la tabla `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
