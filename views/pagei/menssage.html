@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GownerMusic</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header class="header-inicio">
+        <div class="contenedor-menu">
+            <div class="buscador">
+                <img src="../../img/lupa.png" alt="lupa del buscador">
+                <input type="search" name="buscador" id="" placeholder="Buscador">
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="?cm=pagei&m=home" id="Inicio">Inicio</a>
+                    <a href="?cm=pagei&m=perfil&i=<?= $_SESSION['id_user'] ?>" id="Perfil">Perfil</a>
+                    <a href="#" id="Contactos">Contactos</a>
+                    <a href="#" id="Mensajes">Mensajes</a>
+                    <a href="#" id="Notificaciones">Notificaciones</a>
+                    <a href="?cm=sesion&m=cerrar" id="Cerrar">Cerrar Session</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="page-mensajes">
+        <div class="contenedor-mensajes">
+
+
+
+            <div class="lista-amigos">
+                <h5 class="contactos">Contactos</h5>
+                <hr class="hr-contactos">
+                <div class="buscador-contactos">
+                    <form action="" method="post">
+                        <input type="search" name="Buscador-Contactos" id="Buscador-Contactos" placeholder="Buscar Contactos">
+                    </form>
+                </div>
+                <div class="amigo">
+                    <a href="#">
+                        <img src="../../img/user_anonimo.jpg" alt="imagen del contacto">
+                        <p>Nombre del Contacto</p>
+                    </a>
+                </div>
+                <div class="amigo">
+                    <a href="#">
+                        <img src="../../img/user_anonimo.jpg" alt="imagen del contacto">
+                        <p>Nombre del Contacto</p>
+                    </a>
+                </div>
+                <div class="amigo">
+                    <a href="#">
+                        <img src="../../img/user_anonimo.jpg" alt="imagen del contacto">
+                        <p>Nombre del Contacto</p>
+                    </a>
+                </div>
+                <div class="amigo">
+                    <a href="#">
+                        <img src="../../img/user_anonimo.jpg" alt="imagen del contacto">
+                        <p>Nombre del Contacto</p>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="chat-mensajes">
+                <h5 class="nombre-contacto">Nombre del Contacto</h5>
+                <hr class="hr-mensajes">
+                <div class="chat-contacto-mensajes">
+
+                </div>
+                <hr class="hr-separador-chat-y-escribir-mensaje">
+                <div class="escribir-mensaje">
+                    <form action="#" method="post">
+                        <input type="text" name="" id="">
+                        <hr class="hr-separador-enviar-y-escribir-mensaje">
+                        <div class="botones-chat">
+                            <input type="file" name="files-mensajes" id="files-mensajes">
+                            <button class="evniar-mensaje">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="contenedor-derecho">
+            <div class="publicidad">
+                <a href="http://#"><img src="#" alt="Imagen Publicidad"></a>
+            </div>
+            <div class="contenedor-chat">
+                
+            </div>
+        </div>
+
+        
+    </main>
+
+</body>
+</html>

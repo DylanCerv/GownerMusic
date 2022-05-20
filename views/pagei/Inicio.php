@@ -34,14 +34,14 @@ require_once "modules/inicio.getPosts.php";
                 <hr class="linea-contenendor-favoritos">
                 <a href="#" class="contenedor-favoritos">
                     <div class="favoritos">
-                        <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                        <img src="img/favorito.png" alt="logo de favoritos">
                         <h5>Favoritos</h5>
                     </div>
                 </a>
                 <hr class="linea-contenendor-publicaciones-guardadas">
                 <a href="#" class="contenedor-publicaciones-guardadas">
                     <div class="publicaciones-guardadas">
-                        <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de publicaciones guardadas">
+                        <img src="img/guardar.png" alt="logo de publicaciones guardadas">
                         <h5>Publicaciones Guardadas</h5>
                     </div>
                 </a>
@@ -52,34 +52,34 @@ require_once "modules/inicio.getPosts.php";
                     <ul>
                         <li>
                             <a href="#" class="lista-cosas">
-                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <img src="img/reciente.png" alt="logo de favoritos">
                                 <h5>Cosas Recientes</h5>
                             </a>
-                        </li>    
+                        </li> 
                         <li>
                             <a href="#" class="lista-cosas">
-                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <img src="img/reciente.png" alt="logo de favoritos">
                                 <h5>Cosas Recientes</h5>
                             </a>
-                        </li>
+                        </li> 
                         <li>
                             <a href="#" class="lista-cosas">
-                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <img src="img/reciente.png" alt="logo de favoritos">
                                 <h5>Cosas Recientes</h5>
                             </a>
-                        </li>
+                        </li> 
                         <li>
                             <a href="#" class="lista-cosas">
-                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <img src="img/reciente.png" alt="logo de favoritos">
                                 <h5>Cosas Recientes</h5>
                             </a>
-                        </li>
+                        </li> 
                         <li>
                             <a href="#" class="lista-cosas">
-                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <img src="img/reciente.png" alt="logo de favoritos">
                                 <h5>Cosas Recientes</h5>
                             </a>
-                        </li>
+                        </li> 
                     </ul>
                 </div>
                 <hr class="linea-contenendor-grupos">
@@ -88,31 +88,31 @@ require_once "modules/inicio.getPosts.php";
                     <ul>
                         <li>
                             <a href="#" class="lista-grupos">
-                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <img src="img/grupo.png" alt="logo de favoritos">
                                 <h5>Grupos</h5>
                             </a>
                         </li>    
                         <li>
                             <a href="#" class="lista-grupos">
-                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <img src="img/grupo.png" alt="logo de favoritos">
                                 <h5>Grupos</h5>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="lista-grupos">
-                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <img src="img/grupo.png" alt="logo de favoritos">
                                 <h5>Grupos</h5>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="lista-grupos">
-                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <img src="img/grupo.png" alt="logo de favoritos">
                                 <h5>Grupos</h5>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="lista-grupos">
-                                <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="logo de favoritos">
+                                <img src="img/grupo.png" alt="logo de favoritos">
                                 <h5>Grupos</h5>
                             </a>
                         </li>
