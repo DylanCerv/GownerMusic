@@ -10,7 +10,7 @@ if (empty($_POST['mensaje-post']) &&
     empty($_FILES['archivo'])){
 
     //Todos los campos se encuentran vacios
-    header("Location: ../?cm=pagei&m=home");
+    header("Location: ../../?cm=pagei&m=home");
 
 }else{
 
@@ -46,6 +46,6 @@ if (empty($_POST['mensaje-post']) &&
         }
     }
 
-    header("Location: ../?cm=pagei&m=home");
+    header("Location: ../../?cm=pagei&m=home");
 
 }

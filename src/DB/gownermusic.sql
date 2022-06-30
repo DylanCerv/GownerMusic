@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-05-2022 a las 19:45:22
+-- Tiempo de generación: 01-07-2022 a las 01:23:45
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -41,9 +41,7 @@ CREATE TABLE `perfil` (
 --
 
 INSERT INTO `perfil` (`id`, `id_user`, `username_perfil`, `description`, `img_perfil`, `img_portada`) VALUES
-(1, 43, 'power', 'Descripción del usuario 2, me gusta los negocios, soy una persona autodidacta y muy extrovertida', 'img/perfilmio.jpg', NULL),
-(2, 42, 'dylan', 'Soy una persona de negocios pero también aprecio la música en cualquier momento', 'img/dylan.jpg', NULL),
-(9, 54, 'an', NULL, NULL, NULL);
+(11, 56, 'admin', 'Amante de la música y tecnología, siempre innovando en todo.', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -63,13 +61,9 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `id_user`, `content`, `media_dir`) VALUES
-(3, 43, 'Hola chicos aca comparto mi proyecto que realize en google colab y con diversas librerias de python, esto es un colab de herramientas para poder manejar archivos desde el mismo drive :)', 'x.files/image/ab77f9309e38380614933f273a2.herramientas-drive.JPG'),
-(7, 43, '2c1', 'x.files/image/6f5a5ccd23e30365b1015f6b892.composer.png'),
-(8, 43, 'github', 'x.files/image/9c26356899120eed11f0c3ff02a.GitHub.png'),
-(9, 43, 'https://web.telegram.org/k/', NULL),
-(10, 42, 'dylan este es', 'x.files/application/ee66170fbbe9a80f7960c9a24d0.CV-C-(English).pdf'),
-(11, 43, 'SUSUSUSUUSUSUSUUUUUUUUUUUUUUUU', NULL),
-(13, 42, 'Paisaje', 'x.files/image/4926eed57c8d584bd15995f9884.paisaje-natural.jpg');
+(23, 56, 'Como mencionamos al inicio, los gustos en música son muy variados si eres amante del Hip Hop esta es una revista de música que te puede interesar , también tienes Hip Hop Nation, sin embargo está en transición y presenta dificultades en su página web.\r\n\r\nAsí que en Hip Hop Life, encuentras las secciones básicas, noticias, vídeos, entrevistas y agenda de conciertos. En su apartado de cosecha propia puedes leer reportajes, el top 5, en este apartado te brindan las 5 mejores canciones de artistas como Lucas Pulcro, y MKU .\r\n\r\n\r\n \r\nTambién te brindan un playlist y  tienes artículos de opinión. En el Bit Hop se dedican a hablar del campo de la producción musical, técnicas, herramientas y protagonistas.', 'x.files/image/088926bfa725ebcac8812ddcc2f.Bang-Olufsen.jpg'),
+(24, 56, 'Tanto en el mundo digital como en el impreso, existe mucho contenido y no se queda corto para el sector de la música, en especial en las revistas, puedes encontrar revistas de música rock, pop, hip-hop, clásica, independientes, ópera, funk, electrónica, entre otras.', 'x.files/image/01b2427dff2a3286672b21babca.Vinilos-y-Casco.jpg'),
+(25, 56, 'Volver hacia atrás (no vas a volver hacia delante, claro) es una práctica tan habitual como, a veces, beneficiosa para muchas formaciones que se han reformado. En el caso de xPropaganda, no es que se haya reformado Propaganda como tal, sino que pareciera que Claudia Brücken y SusanneFreytag, las dos vocalistas que dieron vida a aquel primer espléndido A SecretWish (ZTT, 1985) con Michael Merthens y Ralph Dörper en la instrumentación, regresaran del pasado para reclamar la continuidad que nunca tuvo aquel debut y que acabó con los alemanes como el rosario de la aurora tras haber facturado semejante delicatessen.', 'x.files/image/a0820f6729e9802ef03363266b2.xPropaganda.jpg');
 
 -- --------------------------------------------------------
 
@@ -92,9 +86,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `passwords`, `last_session`, `token`, `phone`) VALUES
-(42, 'dylan', 'dylan@gmail.com', '$2y$10$IawLbMAhizpuNKKY/vOBmOEyoejvunW/AJZRrkfIvPYTXP2wHE9aW', '2022-05-20', '', 0),
-(43, 'po', 'power102004@gmail.com', '$2y$10$kQtrDPaGvNQVGD1sBmMNUOS4Uka5OVOT64iXfmomnlCHMZJdG1vfG', '2022-05-20', '', 0),
-(54, 'an', 'dominograt@gmail.com', '$2y$10$gbcs5l12MftRD516cuTgU.DgubEbwDLDRAVPPG3Hw80wrglTKHC8i', '2022-05-05', '', 0);
+(56, 'admin', 'admin@admin.com', '$2y$10$Gm/qfeBasf4mDkZ1Nqe3EuOW1EILc4z.Ok1YsFVi0ZgydFzeexiqq', '2022-06-30', '', 0);
 
 --
 -- Índices para tablas volcadas
@@ -128,19 +120,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `perfil`
 --
 ALTER TABLE `perfil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- Restricciones para tablas volcadas

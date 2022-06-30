@@ -8,7 +8,7 @@ require_once "src/modules/inicio.getPosts.php";
 ?>
 
 
-<body>
+<body class="pagina-inicio">
 
     <?php require_once "src/views/template/nav/nav.php"; ?>
 
@@ -22,24 +22,25 @@ require_once "src/modules/inicio.getPosts.php";
                         </div>
                     </div>
                 </div>
-                <hr class="linea-contenendor-perfil-resumen">
-                <div class="descripcion">
+                <div class="container-pequenos descripcion">
                     <p><?= $_SESSION['description_perfil'] ?></p>
                 </div>
-                <hr class="linea-contenendor-favoritos">
-                <a href="#" class="contenedor-favoritos">
-                    <div class="favoritos">
-                        <img src="assets/img/icons/favorito.png" alt="logo de favoritos">
-                        <h5>Favoritos</h5>
-                    </div>
-                </a>
-                <hr class="linea-contenendor-publicaciones-guardadas">
-                <a href="#" class="contenedor-publicaciones-guardadas">
-                    <div class="publicaciones-guardadas">
-                        <img src="assets/img/icons/guardar.png" alt="logo de publicaciones guardadas">
-                        <h5>Publicaciones Guardadas</h5>
-                    </div>
-                </a>
+                <div class="container-pequenos contenedor-favoritos">
+                    <a href="#">
+                        <div class="favoritos">
+                            <img src="assets/img/icons/favorito.png" alt="logo de favoritos">
+                            <h5>Favoritos</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="container-pequenos contenedor-publicaciones-guardadas">
+                    <a href="#">
+                        <div class="publicaciones-guardadas">
+                            <img src="assets/img/icons/guardar.png" alt="logo de publicaciones guardadas">
+                            <h5>Publicaciones Guardadas</h5>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="contenedor-cosas-recientes">
                 <div class="listas">
@@ -77,8 +78,7 @@ require_once "src/modules/inicio.getPosts.php";
                         </li> 
                     </ul>
                 </div>
-                <hr class="linea-contenendor-grupos">
-                <div class="listas">
+                <div class="listas border">
                     <h5 class="titulos">Grupos</h5>
                     <ul>
                         <li>
@@ -125,12 +125,8 @@ require_once "src/modules/inicio.getPosts.php";
 
         </div>
         <div class="contenedor-lado-derecho ">
-            <div class="publicidad">
-                <a href="http://#"><img src="#" alt="Imagen Publicidad"></a>
-            </div>
-            <div class="contenedor-chat">
-                
-            </div>
+            <?php require_once ("src/views/template/publicidad/publicidad.php") ?>
+            
         </div>
     </main>
 

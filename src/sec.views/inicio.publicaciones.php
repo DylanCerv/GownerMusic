@@ -22,6 +22,7 @@ foreach ($_SESSION['postsDATA'] as $datos){
     <div class="publicacion-contenido">
         <p><?= $datos['content']?></p>
 
+        <div class="media-post">
         <?php
         if ($datos['media_dir'] != ""){
         ?>
@@ -29,12 +30,13 @@ foreach ($_SESSION['postsDATA'] as $datos){
         <?php
         }
         ?>
-<?= $datos['media_dir'] ?>
+
+        </div>
     </div>
     <div class="publicacion-opciones">
         <a href="">
-            <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="publicacion-documento">
-            <p>Like</p>
+            <img src="assets\img\icons\like.png" alt="publicacion-documento">
+            <h6>Like</h6>
         </a>
         <!-- <a href="">
             <img src="https://static-exp1.licdn.com/sc/h/2jgp12jkw69qzxpu3r0rvbw01" alt="publicacion-documento">

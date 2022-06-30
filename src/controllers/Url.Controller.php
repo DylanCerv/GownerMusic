@@ -9,7 +9,7 @@ class URLsControllers{
                 require_once "src/models/singup.php";
             }
         }else{
-            require_once "../src/models/singup.php";
+            require_once "../models/singup.php";
         }
     }
 
@@ -50,7 +50,7 @@ class URLsControllers{
 
     public function URLPosts(){
         if (empty($_GET)){
-            require_once "../src/models/posts.php";
+            require_once "..//models/posts.php";
         }else{
             if ($_GET['cm'] == 'posts' && $_GET['m'] == 'new'){
                 require_once "src/models/posts.php";

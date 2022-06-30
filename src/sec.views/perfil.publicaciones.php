@@ -9,11 +9,11 @@ foreach ($_SESSION['postsPerfilDATA'] as $dataPostsPerfil){
             <?php
             if ($dataPostsPerfil['img_perfil'] != ""){
             ?>
-                <img src="<?= $dataPostsPerfil['img_perfil']?>" alt="foto de perfil">
+                <img src="assets/img/perfil/<?= $dataPostsPerfil['img_perfil']?>" alt="foto de perfil">
             <?php
             }else{
             ?>
-                <img src="img/user_anonimo.jpg" alt="foto de perfil">
+                <img src="assets/img/perfil/user_anonimo.jpg" alt="foto de perfil">
             <?php
             }
             ?>
@@ -22,14 +22,16 @@ foreach ($_SESSION['postsPerfilDATA'] as $dataPostsPerfil){
     </div>
     <div class="publicacion-contenido">
         <p><?= $dataPostsPerfil['content']?></p>
-
-        <?php
-        if ($dataPostsPerfil['media_dir'] != ""){
-        ?>
-            <img src="<?= $dataPostsPerfil['media_dir'] ?>" alt="publicacion-documento">
-        <?php
-        }
-        ?>
+        
+        <div class="media-post">
+            <?php
+            if ($dataPostsPerfil['media_dir'] != ""){
+            ?>
+                <img src="public/<?= $dataPostsPerfil['media_dir'] ?>" alt="publicacion-documento">
+            <?php
+            }
+            ?>
+        </div>
 
     </div>
 </div>

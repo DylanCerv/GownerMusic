@@ -408,14 +408,33 @@ header .contenedor-menu{
     align-items: center;
 }
 
+header .contenedor-menu .logo-nav img{
+    width: 40px;
+    background-color: var(--blanco_50);
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
 header .contenedor-menu .buscador{
     display: flex;
     width: 50%;
 }
 
 header .contenedor-menu .buscador img{
-    margin-right: 1%;
-    width: 5%;
+    position: absolute;
+    width: 23px;
+    margin: 6px 0 0 10px;
+}
+
+header .contenedor-menu .buscador input{
+    position: relative;
+    border: none;
+    border-style: none;
+    border: solid 1px var(--border-input);
+    border-radius: 100px;
+    height: 2.2rem;
+    width: 100%;
+    padding-left: 40px;
 }
 
 header .contenedor-menu .menu{
@@ -426,6 +445,12 @@ header .contenedor-menu .menu{
 header .contenedor-menu .menu nav a{
     margin: 0 0.5%;
     color: var(--blanco);
+    padding: 0.5%;
+}
+
+header .contenedor-menu .menu nav a:hover{
+    font-weight: 600;
+    font-style: inherit;
 }
 
 header .contenedor-menu .menu nav a#Cerrar{
@@ -440,20 +465,25 @@ header .contenedor-menu .menu nav a#Cerrar{
 /*********************
 CUERPO DE LA PAGINA
 *********************/
+body.pagina-inicio{
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.144), rgb(219 223 240 / 35%), rgba(174, 195, 225, 0.192), rgb(117 171 209 / 12%), rgb(117 217 245 / 12%));
+    
+}
+
 .main-inicio{
     display: flex;
-    grid-template-columns: 3, 0.5fr;
-    grid-gap: 25px;
-    grid-auto-rows: 10px;
-    margin: 0 14.5%;
+    grid-template-columns: 3, 1fr;
+    grid: 25px;
+    gap: 35px;
+    margin: 0 10rem;
 }
 
 .contenedor-lado-izquierdo{
-    width: 47%;
+    width: 700px;
 }
 
 .contenedor-lado-derecho{
-    width: 65%;
+    width: 700px;
 }
 
 /******************** CONTENEDORES ******************/
@@ -482,7 +512,6 @@ CUERPO DE LA PAGINA
 .contenedor-cosas-recientes{
     border: solid 1px var(--border-input);
     border-radius: 10px;
-    padding: 4.5%;
     background-color: #ffffff;
 }
 
@@ -549,6 +578,10 @@ CUERPO DE LA PAGINA
 
 /****************** PERFIL-RESUMEN ********************/
 
+.container-img-resumen-perfil{
+    display: flex;
+    justify-content: center;
+}
 
 .perfil-posicion-absoluta{
     position: relative;
@@ -556,64 +589,68 @@ CUERPO DE LA PAGINA
 
 .cabecera-perfil img{
     width: 100%;
+    height: 50%;
     border-radius: 9px 9px 0 0;
     background-color: #ffffff;
     position: absolute;
     /* z-index: 1; */
 }
 
+.perfil-posicion-absoluta .cabecera-perfil a {
+    position: relative;
+    width: max-content;
+    height: max-content;
+}
+
 .perfil-posicion-absoluta .cabecera-perfil a img.perfil{
     position: relative;
-    /* z-index: 2; */
     border-radius: 100%;
-    padding: 5% 30%;
-    background-color: transparent;
+    width: 80px;
+    margin-top: 25%;
+    /* z-index: 2; */
 }
 
 .perfil-posicion-absoluta .cabecera-perfil a h4{
-    margin: 0 15% 5% 15%;
+    margin: 10px 5px;
     background-color: #ffffff;
     font-size: 1rem;
 }
 
-/*//////////////////////////////////*/
 
-.contenedor-lado-izquierdo .contenedor-perfil-resumen .descripcion{
-    margin: 5%;
+.contenedor-lado-izquierdo .container-pequenos{
+    border-top: solid 1px var(--border-input);
+    padding: 15px 5px;
 }
+
+/*//////////////////////////////////*/
 
 .contenedor-lado-izquierdo .contenedor-perfil-resumen .descripcion p{
     font-size: 0.95em;
+    padding: 10px;
 }
 
-.contenedor-lado-izquierdo .contenedor-perfil-resumen a.contenedor-favoritos{
-    padding: .5%;
-}
 
-.contenedor-lado-izquierdo .contenedor-perfil-resumen a.contenedor-favoritos .favoritos img{
+.contenedor-lado-izquierdo .contenedor-perfil-resumen .contenedor-favoritos .favoritos img{
     float: left;
     margin: 0 5%;
     width: 8%;
 }
 
-.contenedor-lado-izquierdo .contenedor-perfil-resumen a.contenedor-favoritos h5{
+.contenedor-lado-izquierdo .contenedor-perfil-resumen .contenedor-favoritos h5{
     font-size: 0.8em;
     padding: 0 0 0 15%;
 }
 
 /*//////////////////////////////////*/
 
-.contenedor-lado-izquierdo .contenedor-perfil-resumen a.contenedor-publicaciones-guardadas{
-    padding: .5%;
-}
 
-.contenedor-lado-izquierdo .contenedor-perfil-resumen a.contenedor-publicaciones-guardadas .publicaciones-guardadas img{
+.contenedor-lado-izquierdo .contenedor-perfil-resumen .contenedor-publicaciones-guardadas .publicaciones-guardadas img{
     float: left;
     margin: 0 5%;
     width: 8%;
 }
 
-.contenedor-lado-izquierdo .contenedor-perfil-resumen a.contenedor-publicaciones-guardadas h5{
+.contenedor-lado-izquierdo .contenedor-perfil-resumen .contenedor-publicaciones-guardadas h5{
     font-size: 0.8em;
     padding: 0 0 0 15%;
 }
@@ -623,6 +660,18 @@ CUERPO DE LA PAGINA
 
 .contenedor-lado-izquierdo .contenedor-cosas-recientes hr{
     margin: 5% -5%;
+}
+
+.contenedor-lado-izquierdo .contenedor-cosas-recientes .listas{
+    padding: 20px;
+}
+
+.contenedor-lado-izquierdo .contenedor-cosas-recientes .listas ul{
+    padding-right: 20px;
+}
+
+.contenedor-lado-izquierdo .contenedor-cosas-recientes .border{
+    border-top: solid 1px var(--border-input);
 }
 
 .contenedor-lado-izquierdo .contenedor-cosas-recientes .listas .titulos{
@@ -643,6 +692,7 @@ CUERPO DE LA PAGINA
 /******************** PUBLICACION ******************/
 
 .publicacion{
+    width: 700px;
     margin-bottom: 2%;
 }
 
@@ -661,9 +711,7 @@ CUERPO DE LA PAGINA
 }
 
 .publicacion .publicacion-contenido{
-    max-width: 90%;
-    margin: 1%;
-    /* width: 100%; */
+    margin: 5px 0;
 }
 
 .publicacion .publicacion-contenido p{
@@ -671,13 +719,20 @@ CUERPO DE LA PAGINA
     font-size: 1rem;
 }
 
-.publicacion .publicacion-contenido img{
+.publicacion .publicacion-contenido .media-post{
+    padding: 10px 0;
+}
+
+.publicacion .publicacion-contenido .media-post img{
     width: 100%;
+    border: solid 1px var(--blanco_50);
+    border-radius: 5px;
 }
 
 .publicacion .publicacion-opciones{
     display: flex;
     flex-direction: row;
+    border-top: solid 1px var(--border-input);
 }
 
 .publicacion .publicacion-opciones a{
@@ -688,18 +743,33 @@ CUERPO DE LA PAGINA
 }
 
 .publicacion .publicacion-opciones a img{
-    width: 25%;
+    width: 15px;
     margin-right: 5%;
 }
 
-.publicacion .publicacion-opciones a p{
+.publicacion .publicacion-opciones a h6{
     font-size: .9rem;
 }
 
 /******************** PUBLICIDAD ******************/
+.contenedor-lado-derecho .publicidad a{
+    text-align: center;
+    background-color: var(--blanco);
+}
 
+.contenedor-lado-derecho .publicidad a img{
+    width: 100%;
+}
 
+.contenedor-lado-derecho .publicidad a h3{
+    padding: 3px 0;
+    border-top: solid 1px var(--border-input);
+    background-color: var(--blanco);
+}
 
+.contenedor-lado-derecho .publicidad a h3:hover{
+    color: #dd6b00;
+}
 
 /*GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 
@@ -725,27 +795,29 @@ main .contenedor-perfil-usuario{
     border-radius: 10px;
 }
 
-main .contenedor-perfil-usuario .fotos{
+main .contenedor-perfil-usuario .content-perfil .fotos-perfil{
     position: relative;
+
 }
 
-main .contenedor-perfil-usuario .fotos .foto-portada{
+main .contenedor-perfil-usuario .content-perfil .foto-portada{
     width: 100%;
+    height: 80%;
     border-radius: 10px 10px 0 0;
     position: absolute;
 }
 
 
-main .contenedor-perfil-usuario .fotos .foto-perfil{
+main .contenedor-perfil-usuario .content-perfil .foto-perfil{
     position: relative;
     border-radius: 100%;
     width: 15%;
     margin: 17% 0 0 4%;
 }
 
-main .contenedor-perfil-usuario .fotos .nombre-usuario{
+main .contenedor-perfil-usuario .content-perfil .nombre-usuario{
     width: 20%;
-    margin-left: 2%;
+    margin-left: 1%;
     text-align: center;
 }
 

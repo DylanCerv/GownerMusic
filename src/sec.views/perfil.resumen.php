@@ -4,19 +4,21 @@
 <div class="contenedor-perfil">
     <div class="profile">
         <div class="contenedor-perfil-usuario">
-            <div class="fotos">
-                <img src="https://media-exp1.licdn.com/dms/image/C4D16AQGKgCxFE9D5Xg/profile-displaybackgroundimage-shrink_200_800/0/1644900203321?e=1654732800&v=beta&t=plNZlVVT8oIjV8IEXffbO-3MQcvlEO1LEE_vb2p5UZY" alt="foto-portada" class="foto-portada">
-                <?php
-                    if ($_SESSION['img_perfil_perfil'] != ""){
-                ?>
-                        <img src="<?= $_SESSION['img_perfil_perfil']; ?>" alt="foto-perfil" class="foto-perfil">
-                <?php
-                    }else{
-                ?>
-                        <img src="img/user_anonimo.jpg" alt="foto-perfil" class="foto-perfil">
-                <?php
-                    }
-                ?>
+            <div class="content-perfil">
+                <div class="fotos-perfil">
+                            <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/09/mejor-aplicacion-fondos-pantalla-animados-llegaria-android-dentro-poco-2482649.jpg" alt="foto-portada" class="foto-portada">
+                    <?php
+                        if ($_SESSION['img_perfil_perfil'] != ""){
+                    ?>
+                            <img src="assets/img/perfil/<?= $_SESSION['img_perfil_perfil']; ?>" alt="foto-perfil" class="foto-perfil">
+                    <?php
+                        }else{
+                    ?>
+                            <img src="assets/img/perfil/user_anonimo.jpg" alt="foto-perfil" class="foto-perfil">
+                    <?php
+                        }
+                    ?>
+                </div>
                 <h3 class="nombre-usuario"><?= $_SESSION['username_perfil']?></h3>
             </div>
             <div class="descripcion-user">
@@ -24,6 +26,6 @@
             </div>
         </div>
         <hr>
-        <?php require_once "sec.views/perfil.publicaciones.php"; ?>
+        <?php require_once "src/sec.views/perfil.publicaciones.php"; ?>
     </div>
 </div>

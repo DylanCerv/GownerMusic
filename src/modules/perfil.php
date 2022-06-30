@@ -1,7 +1,7 @@
 <?php
 
 
-require_once "controllers/Perfil.Controller.php";
+require_once "src/controllers/Perfil.Controller.php";
 
 
 $controller = new PerfilController();

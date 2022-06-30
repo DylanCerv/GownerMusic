@@ -1,8 +1,11 @@
 <header class="header-inicio">
         <div class="contenedor-menu">
+            <div class="logo-nav">
+                <img src="assets\img\icons\logo.svg" alt="">
+            </div>
             <div class="buscador">
-                <img src="assets/img/icons/lupa.png" alt="lupa del buscador">
                 <input type="search" name="buscador" id="" placeholder="Buscador">
+                <img src="assets/img/icons/lupa.png" alt="lupa del buscador">
             </div>
             <div class="menu">
                 <nav>
